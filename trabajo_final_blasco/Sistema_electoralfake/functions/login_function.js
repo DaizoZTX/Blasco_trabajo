@@ -6,7 +6,7 @@ const passwordInput = document.getElementById('passwordUsuario');
 //passwords autoasignados
 let userPassword=1234;
 
-//Funciones
+//Eventos
 //Inicio de sesion
 botonLogin.addEventListener('click', function ()
 {

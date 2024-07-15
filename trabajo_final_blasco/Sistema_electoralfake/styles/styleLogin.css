@@ -5,7 +5,7 @@ body
 #contGeneral
 {
     width: fit-content;
-    background-color: rgb(139, 192, 192);
+    background-color: rgb(101, 152, 201);
     padding: 5%;
     padding-bottom: 1%;
     margin-left: 70vh;
@@ -15,13 +15,14 @@ body
 }
 #tituloPrincipalCont
 {
-    background-color: rgb(110, 120, 146);
+    background-color: rgb(119, 129, 218);
     padding-left: 3vh ;
     padding-right: 15vh;
     border-radius: 6%;
 }
 #contBotones
 {
+    margin-left: 15px;
     display: block;
     padding: 5vh;
 }
@@ -32,7 +33,6 @@ body
 .botones1, .botones2
 {
     border: none;
-    background-color: rgb(199, 228, 228);
     border-radius: 10%;
     font-family: oswald;
     font-size: medium;
