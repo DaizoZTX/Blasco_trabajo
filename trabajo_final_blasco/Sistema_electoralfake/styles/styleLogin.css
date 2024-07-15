@@ -1,0 +1,65 @@
+body
+{
+    background-color: gray;
+}
+#contGeneral
+{
+    width: fit-content;
+    background-color: rgb(139, 192, 192);
+    padding: 5%;
+    padding-bottom: 1%;
+    margin-left: 70vh;
+    font-family: oswald;
+    margin-top: 10vh;
+    border-radius: 15%;   
+}
+#tituloPrincipalCont
+{
+    background-color: rgb(110, 120, 146);
+    padding-left: 3vh ;
+    padding-right: 15vh;
+    border-radius: 6%;
+}
+#contBotones
+{
+    display: block;
+    padding: 5vh;
+}
+#contBotonOlvide
+{
+    margin-top: 20%;
+}
+.botones1, .botones2
+{
+    border: none;
+    background-color: rgb(199, 228, 228);
+    border-radius: 10%;
+    font-family: oswald;
+    font-size: medium;
+    width: 20vh;
+    margin-left: 10%;
+}
+.botones1:hover
+{
+    color: rgb(95, 39, 72); 
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgb(171, 131, 207);
+}
+.botones2:hover
+{
+    color: rgb(95, 39, 72); 
+    transition: color 0.5s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgb(171, 131, 207);
+}
+.textInput
+{
+    margin-left: 20px;
+}
+.textInput, .passwordInput
+{
+    border: none;
+    border-radius: 10%;
+    background-color: rgb(235, 235, 235);
+}
