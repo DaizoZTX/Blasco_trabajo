@@ -94,7 +94,9 @@ button:hover{
     text-shadow: #ffffff 0 2px;
 }
 
-
+i{
+    font-size: 2vw;
+}
 
 h1{
     font-size: 7vw;
