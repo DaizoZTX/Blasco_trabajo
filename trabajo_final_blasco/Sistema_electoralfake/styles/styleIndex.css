@@ -3,6 +3,10 @@ body
     font-family: oswald;
     background-color: grey;
 }
+
+i{
+    font-size: 4vw;
+}
 #contGeneral
 {
     margin-left: 90vh;
