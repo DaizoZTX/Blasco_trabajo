@@ -1,42 +1,62 @@
+*{
+    font-family: 'Lovelo', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
 
 .general{
     width: 100%;
     height: 100%;
     top: 0%;
     left: 0%;
-    background-color: rgb(240, 240, 240);
+    background-color: #fdcae1;
     justify-content: center;
     position: absolute;
     align-items: center;
 }
 
 .titulo{
-    background-color: purple;
+    background-color: none;
+    text-shadow: #ffffff 0 2px;
 }
 
 .contenedor{
-    background-color: aqua;
+    background-color: rgb(157, 255, 255);
     width: 40vw;
     height: 60vh;
+
+    border-style: solid;
+    border-radius: 1vw;
+    border-color: #84b6f4;
 }
 
 
 #inicioSesion{
     padding: 5%;
+    color: #000000;
+    text-shadow: #ffffff 0 2px;
 }
 
 .form{
-    background-color: blue;
+    background-color: none;
     height: 50%;
     justify-content: space-between;
 }
 
 .usuario{
-    background-color: brown;
+    background-color: none;
+    border-color: #84b6f4;
+    border-style: solid;
+    width: 50%;
+    margin-bottom: 10%;
+    text-shadow: #ffffff 0 2px;
 }
 
 .contraseña{
-    background-color: chartreuse;
+    background-color: none;
+    border-color: #84b6f4;
+    border-style: solid;
+    width: 50%;
+    text-shadow: #ffffff 0 2px;
 }
 
 .label{
@@ -44,7 +64,7 @@
 }
 
 .input{
-    background-color: black;
+    background-color: none;
     margin: 4%;
     font-size: 1.3vw;
 
@@ -52,13 +72,25 @@
 
 .botones{
     margin-top: 7%;
-    background-color: blue;
-    height: 15%;
+    background-color: none;
+    height: 10%;
+    text-shadow: #ffffff 0 2px;
+}
+
+button:hover{
+    color: #ff6961;
+    border-color: #ff6961;
 }
 
 .botones1{
     font-size: 2.2vw;
+    border-style: solid;
+    border-radius: 1vw;
+    border-color: rgb(41, 41, 41);
+    background-color: transparent;
 }
+
+
 
 h1{
     font-size: 7vw;
@@ -66,3 +98,12 @@ h1{
 h2{
     font-size: 2.5vw;
 }
+
+@font-face {
+    font-family: 'Lovelo';
+    src: url('Fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),
+         url("Fuentes/Lovelo/Lovelo\ Line\ Bold.otf") format("opentype"),
+         url("Fuentes/Lovelo/Lovelo\ Line\ Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
