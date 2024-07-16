@@ -31,7 +31,6 @@
 
 
 #inicioSesion{
-    padding: 5%;
     color: #000000;
     text-shadow: #ffffff 0 2px;
 }
@@ -46,8 +45,9 @@
     background-color: none;
     border-color: #84b6f4;
     border-style: solid;
+    border-radius: 1vw;
     width: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
     text-shadow: #ffffff 0 2px;
 }
 
@@ -55,7 +55,9 @@
     background-color: none;
     border-color: #84b6f4;
     border-style: solid;
+    border-radius: 1vw;
     width: 50%;
+    margin-bottom: 3%;
     text-shadow: #ffffff 0 2px;
 }
 
@@ -71,15 +73,16 @@
 }
 
 .botones{
-    margin-top: 7%;
+    margin-top: 3%;
     background-color: none;
     height: 10%;
-    text-shadow: #ffffff 0 2px;
+    
 }
 
 button:hover{
     color: #ff6961;
     border-color: #ff6961;
+    text-shadow: #ffffff 0 2px;
 }
 
 .botones1{
@@ -88,6 +91,7 @@ button:hover{
     border-radius: 1vw;
     border-color: rgb(41, 41, 41);
     background-color: transparent;
+    text-shadow: #ffffff 0 2px;
 }
 
 
