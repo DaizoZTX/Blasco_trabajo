@@ -9,36 +9,46 @@
 <link rel="stylesheet" href="paquetes/node_modules/boxicons/css/boxicons.min.css">
 
 <body>
-    <!-- Contenedor del nombre -->
-    <div class="titulo">
-        <h1>SEN2024</h1>
-    </div>
     <!-- Contenedor general -->
-    <div Class="general">
-        
+    <div class="general">
+
         <!-- Contenedor del titulo -->
-        <div id="tituloInicioCont">
-            <h2>Iniciar sesión.</h2>
-        </div>
-        <!-- Contenedor ingreso de datos -->
-        <form action="submit">
-            <div id="contUsuario">
-                <label>Usuario</label>
-                <input type="text" class="textInput" id="txtUsuario">
+         <center>
+            <div class="titulo">
+
+                <h1>SEN2024</h1>
+
             </div>
-            <div id="contContraseña">
-                <label>Contraseña</label>
-                <input type="password" class="passwordInput" id="passwordUsuario">
+
+            <div class="contenedor">
+
+                <div class="tituloContenedor">
+                    <h2 id="inicioSesion">Inicio de sesión</h2>
+                </div>
+                
+                <form action="submit" class="form">
+
+                    <div class="usuario">
+                        <label class="label">Usuario</label> <br>
+                        <input type="text" class="input" id="txtUsuario">
+                    </div>
+
+                    <div class="contraseña">
+                        <label class="label">Contraseña</label> <br>
+                        <input type="password" class="input" id="passwordUsuario">
+                    </div>
+    
+                </form>
+
+                <div class="botones">
+                    <div class="botonEntrar">
+                        <button class="botones1">Entrar</button>
+                    </div>
+
+                </div>
+
             </div>
-        </form>
-        <div id="contBotones">
-            <div id="contBotonEntrar">
-                <button class="botones1">Entrar</button>
-            </div>
-            <div id="contBotonOlvide">
-                <button class="botones2">Olvide mi contraseña!</button>
-            </div>
-        </div>
+        </center>
     </div>
     <!-- enlace del script -->
      <script src="functions/login_function.js"></script>

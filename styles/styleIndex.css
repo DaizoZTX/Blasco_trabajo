@@ -1,7 +1,68 @@
-body
-{
+
+.general{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
     background-color: rgb(240, 240, 240);
-    display: flex;
     justify-content: center;
+    position: absolute;
     align-items: center;
+}
+
+.titulo{
+    background-color: purple;
+}
+
+.contenedor{
+    background-color: aqua;
+    width: 40vw;
+    height: 60vh;
+}
+
+
+#inicioSesion{
+    padding: 5%;
+}
+
+.form{
+    background-color: blue;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.usuario{
+    background-color: brown;
+}
+
+.contraseña{
+    background-color: chartreuse;
+}
+
+.label{
+    font-size: 4vh;
+}
+
+.input{
+    background-color: black;
+    margin: 4%;
+    font-size: 1.3vw;
+
+}
+
+.botones{
+    margin-top: 7%;
+    background-color: blue;
+    height: 15%;
+}
+
+.botones1{
+    font-size: 2.2vw;
+}
+
+h1{
+    font-size: 7vw;
+}
+h2{
+    font-size: 2.5vw;
 }
