@@ -105,9 +105,9 @@ h2{
 
 @font-face {
     font-family: 'Lovelo';
-    src: url('Fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),
-         url("Fuentes/Lovelo/Lovelo\ Line\ Bold.otf") format("opentype"),
-         url("Fuentes/Lovelo/Lovelo\ Line\ Light.otf") format("opentype");
+    src: url('fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),
+         url("fuentes/Lovelo/Lovelo\ Line\ Bold.otf") format("opentype"),
+         url("fuentes/Lovelo/Lovelo\ Line\ Light.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }
