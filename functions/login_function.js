@@ -13,7 +13,7 @@ botonLogin.addEventListener('click', function ()
     if (nickInput.value=="Usuario" && passwordInput.value==userPassword)
     {
         alert("Sera dirigido a la pagina de votacion...");
-        window.location.href='index.html';
+        window.location.href='votos.html';
     }
     else
     {

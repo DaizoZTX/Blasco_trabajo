@@ -1,0 +1,60 @@
+body
+{
+    font-family: oswald;
+    background-color: grey;
+}
+#contGeneral
+{
+    margin-left: 90vh;
+    margin-top: 20vh;
+    width: fit-content;
+    background-color: rgb(101, 152, 201);
+    border-radius: 10px;
+    padding: 15px;
+}
+.inputCheck
+{
+    display: block;
+    margin-bottom: 1px;
+    margin-left: 10px;
+}
+.contInputs
+{
+    padding-top: 10px;
+    padding: 12px;
+    display: flex;
+}
+#contButton
+{
+    padding-top: 20px;
+}
+.labels
+{
+    margin-top: 18px;
+    margin-left: 10px;
+}
+.botones
+{
+    border: none;
+    font-family: oswald;
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+}
+.botones:hover
+{
+    color: rgb(95, 39, 72);
+    transition: color 0.5s ease;
+    background-color: rgb(171, 131, 207);
+    transition: background-color 0.5s ease;
+}
+#BotonInicio
+{
+    margin-left: 35px;
+}
+.titulo
+{
+    background-color: rgb(119, 129, 218);
+    border-radius: 15px;
+    padding-left: 15px;
+}
