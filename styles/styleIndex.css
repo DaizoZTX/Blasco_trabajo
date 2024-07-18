@@ -32,7 +32,6 @@
     border-color: #84b6f4;
 }
 
-
 #inicioSesion{
     color: #333333;
     text-shadow: aliceblue 0 2px;
@@ -54,6 +53,10 @@
     text-shadow: aliceblue 0 2px;
 }
 
+.usuario:hover{
+    border-color: #ff6961;
+}
+
 .contraseña{
     background-color: aliceblue;
     border-color: #84b6f4;
@@ -63,6 +66,11 @@
     margin-bottom: 3%;
     text-shadow: aliceblue 0 2px;
 }
+
+.contraseña:hover{
+    border-color: #ff6961;
+}
+
 
 .label{
     font-size: 4vh;

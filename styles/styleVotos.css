@@ -99,6 +99,16 @@ hr{
     margin-right: 3%;
 }
 
+.tarjeta:hover{
+    border-color: aliceblue;
+}
+
+.botones button:hover{
+    border-color: #ff6961;
+    color: #ff6961;
+    background-color: aliceblue;
+}
+
 @font-face {
     font-family: 'Lovelo';
     src: url('fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),
