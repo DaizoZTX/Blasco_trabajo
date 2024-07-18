@@ -15,7 +15,7 @@
 }
 
 .titulo{
-    background-color: blue;
+    background-color: none;
     position: relative;
     width: auto;
     height: auto;
@@ -24,10 +24,72 @@
 
 .subTitulo{
 
-    background-color: blueviolet;
+    background-color: none;
     color: aliceblue;
 }
 
+.mostrar{
+    background-color: none;
+    height: fit-content;
+
+}
+
+.informacion{
+    background-color: none;
+    height: 60%;
+}
+
+.tarjetas{
+    background-color: none;
+    display: flex;
+    height: 90%;
+    justify-content: space-around;
+}
+
+.ganador{
+    background-color: none;
+    width: 30%;
+
+}
+
+.tarjetas div{
+
+    border-style: solid;
+    border-radius: 2vw;
+    background-color: aliceblue;
+}
+
+.repartido{
+    background-color: none;
+    width: 30%;
+}
+
+.grafica{
+    background-color: none;
+    width: 30%;
+}
+
+.ganador i{
+    font-size: 18vw;
+    margin: -10%;
+}
+
+hr{
+    border-top-color: #00e1ff;
+    border-bottom-color: #00e1ff;
+    border-style: solid;
+    background-color: #00e1ff;
+    border-radius: 1vw;
+    height: 0.2vw;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+button{
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    border-style: solid;
+}
 @font-face {
     font-family: 'Lovelo';
     src: url('fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),

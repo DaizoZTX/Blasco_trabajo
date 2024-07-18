@@ -18,6 +18,8 @@
     background-color: none;
     text-shadow: aliceblue 0 2px;
     color: aliceblue;
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .contenedor{
@@ -91,8 +93,8 @@ button:hover{
     font-size: 2.2vw;
     border-style: solid;
     border-radius: 1vw;
-    border-color: rgb(41, 41, 41);
-    background-color: transparent;
+    border-color: #84b6f4;
+    background-color: aliceblue;
     text-shadow: aliceblue 2px;
 }
 
