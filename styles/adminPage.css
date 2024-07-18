@@ -57,6 +57,12 @@
     border-style: solid;
     border-radius: 2vw;
     background-color: aliceblue;
+    border-color: transparent;
+}
+
+.tarjetas div:hover{
+    border-color: #ff6961;
+    color: #ff6961;
 }
 
 .repartido{
@@ -89,6 +95,14 @@ button{
     font-size: 1.5vw;
     border-radius: 1vw;
     border-style: solid;
+    border-color: transparent;
+    background-color: aliceblue;
+    margin-bottom: 1%;
+}
+
+button:hover{
+    border-color: #ff6961;
+    color: #ff6961;
 }
 @font-face {
     font-family: 'Lovelo';
