@@ -8,7 +8,7 @@
     height: 100%;
     top: 0%;
     left: 0%;
-    background-color: #fdcae1;
+    background-color: #333333;
     justify-content: center;
     position: absolute;
     align-items: center;
@@ -16,7 +16,8 @@
 
 .titulo{
     background-color: none;
-    text-shadow: #ffffff 0 2px;
+    text-shadow: aliceblue 0 2px;
+    color: aliceblue;
 }
 
 .contenedor{
@@ -31,8 +32,8 @@
 
 
 #inicioSesion{
-    color: #000000;
-    text-shadow: #ffffff 0 2px;
+    color: #333333;
+    text-shadow: aliceblue 0 2px;
 }
 
 .form{
@@ -42,23 +43,23 @@
 }
 
 .usuario{
-    background-color: none;
+    background-color: aliceblue;
     border-color: #84b6f4;
     border-style: solid;
     border-radius: 1vw;
     width: 50%;
     margin-bottom: 3%;
-    text-shadow: #ffffff 0 2px;
+    text-shadow: aliceblue 0 2px;
 }
 
 .contraseña{
-    background-color: none;
+    background-color: aliceblue;
     border-color: #84b6f4;
     border-style: solid;
     border-radius: 1vw;
     width: 50%;
     margin-bottom: 3%;
-    text-shadow: #ffffff 0 2px;
+    text-shadow: aliceblue 0 2px;
 }
 
 .label{
@@ -66,9 +67,10 @@
 }
 
 .input{
-    background-color: none;
+    background-color: aliceblue;
     margin: 4%;
     font-size: 1.3vw;
+    border-radius: 0.5vw;
 
 }
 
@@ -82,7 +84,7 @@
 button:hover{
     color: #ff6961;
     border-color: #ff6961;
-    text-shadow: #ffffff 0 2px;
+    text-shadow: aliceblue 0 2px;
 }
 
 .botones1{
@@ -91,7 +93,7 @@ button:hover{
     border-radius: 1vw;
     border-color: rgb(41, 41, 41);
     background-color: transparent;
-    text-shadow: #ffffff 0 2px;
+    text-shadow: aliceblue 2px;
 }
 
 i{
