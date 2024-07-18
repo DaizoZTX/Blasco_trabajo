@@ -1,60 +1,108 @@
-body
-{
-    font-family: oswald;
-    background-color: grey;
+*{
+    font-family: 'Lovelo', sans-serif;
+    transition: all 0.25s ease-in-out;
 }
-#contGeneral
-{
-    margin-left: 90vh;
-    margin-top: 20vh;
-    width: fit-content;
-    background-color: rgb(101, 152, 201);
-    border-radius: 10px;
-    padding: 15px;
+
+.general{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #333333;
+    position: absolute;
+
 }
-.inputCheck
-{
-    display: block;
-    margin-bottom: 1px;
-    margin-left: 10px;
+
+.titulo{
+    background-color: none;
+    position: relative;
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+    color: aliceblue;
 }
-.contInputs
-{
-    padding-top: 10px;
-    padding: 12px;
+
+.subTitulo{
+
+    background-color: none;
+    position: relative;
+    padding-left: 5%;
+    color: aliceblue;
+}
+
+.votantes{
+    background-color: none;
+    justify-content: space-around;
+    align-items: center;
     display: flex;
+
+    height: 50%;
 }
-#contButton
-{
-    padding-top: 20px;
+
+.tarjeta{
+    background-color: aliceblue;
+    width: 15vw;
+    height: 40vh;
+    
+    border-color: #333333;
 }
-.labels
-{
-    margin-top: 18px;
-    margin-left: 10px;
+
+.tarjeta i{
+    font-size: 12vw;
 }
-.botones
-{
-    border: none;
-    font-family: oswald;
-    font-size: medium;
-    border: none;
-    border-radius: 10px;
+
+.botones{
+    background-color: none;
+    height: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
 }
-.botones:hover
-{
-    color: rgb(95, 39, 72);
-    transition: color 0.5s ease;
-    background-color: rgb(171, 131, 207);
-    transition: background-color 0.5s ease;
+
+.botones button{
+    font-size: 2vw;
+    height: fit-content;
+    border-radius: 1vw;
 }
-#BotonInicio
-{
-    margin-left: 35px;
+
+.botones i{
+    font-size: 2.5vw;
 }
-.titulo
-{
-    background-color: rgb(119, 129, 218);
-    border-radius: 15px;
-    padding-left: 15px;
+
+img{
+    width: 8vw;
 }
+
+h3{
+    font-size: 2vw;
+}
+
+button{
+    border-style: solid;
+    border-radius: 2vw;
+}
+
+button:hover{
+    background-color: #00e1ff;
+}
+
+hr{
+    border-top-color: #00e1ff;
+    border-bottom-color: #00e1ff;
+    border-style: solid;
+    height: 1%;
+    background-color: #00e1ff;
+    border-radius: 1vw;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+@font-face {
+    font-family: 'Lovelo';
+    src: url('fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),
+         url("fuentes/Lovelo/Lovelo\ Line\ Bold.otf") format("opentype"),
+         url("fuentes/Lovelo/Lovelo\ Line\ Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }

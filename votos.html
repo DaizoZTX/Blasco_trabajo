@@ -3,45 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SEN2024</title>
-    <link rel="stylesheet" href="styles/styleVotos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+
+<link rel="stylesheet" href="styles/styleVotos.css">
+<link rel="stylesheet" href="paquetes/node_modules/boxicons/css/boxicons.min.css">
+
 <body>
     <!-- Contenedor general -->
-    <div id="contGeneral">
-        <!-- Contenedor titulo -->
+    <div class="general">
+
         <div class="titulo">
-            <h1>SEN2024</h1>
+            <h1>Titulo de la votacion</h1>
         </div>
-        <!-- Contenedor Selectores -->
-        <div>
-            <div class="contInputs">
-                <img src="img/cand.png" alt="cand1" width="60px">
-                <input type="radio" name="candidato" value="1" class="inputCheck" id="check1" >
-                <label for="" class="labels">Jon Doe 1</label>
-            </div>
-            <div class="contInputs">
-                <img src="img/cand.png" alt="cand2" width="60px">
-                <input type="radio" name="candidato" value="2" class="inputCheck" id="check2">
-                <label for="" class="labels">Jon Doe 2</label>
-            </div>
-            <div class="contInputs">
-                <img src="img/cand.png" alt="cand3" width="60px">
-                <input type="radio" name="candidato" value="3" class="inputCheck" id="check3">
-                <label for="" class="labels">Jon Doe 3</label>
-            </div>
+
+        <hr>
+
+        <div class="subTitulo">
+            <h2>¿Cuál Candidato desea elegir?</h2>
         </div>
-        <!-- Contenedor botones -->
-        <div id="contButton">
-            <button class="botones" id="BotonVotar">Votar</button>
-            <button class="botones" id="BotonInicio">Volver al inicio</button>
+
+        <div class="votantes">
+         
+            <button class="tarjeta">  
+                <i class='bx bxs-user'></i>
+                <h3>Ed mundo</h3>
+            </button>
+
+            <button class="tarjeta">  
+                <i class='bx bxs-user'></i>
+                <h3>Coñoemadre</h3>
+            </button>
+
+            <button class="tarjeta">  
+                <i class='bx bxs-user'></i>
+                <h3>Kevin Gonzalez</h3>
+            </button>
+
+            <button class="tarjeta">  
+                <i class='bx bxs-user'></i>
+                <h3>Pedro Moreno</h3>
+            </button>
+
+            <button class="tarjeta">  
+                <i class='bx bxs-user'></i>
+                <h3>El bicho pelao</h3>
+            </button>
+
         </div>
+
+        <div class="botones">
+            <button>
+                <i class='bx bx-arrow-back'></i>
+                Volver al Inicio
+            </button>
+        </div>
+
     </div>
     <!-- Enlace al JavaScript -->
      <script src="functions/votos_functions.js"></script>
+     <script src="paquetes/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
