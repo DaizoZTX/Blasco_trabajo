@@ -37,6 +37,7 @@
 .informacion{
     background-color: none;
     height: 60%;
+    display: auto;
 }
 
 .tarjetas{
@@ -78,6 +79,10 @@
 .ganador i{
     font-size: 18vw;
     margin: -10%;
+}
+
+.botones{
+    margin-left: 1%;
 }
 
 hr{
