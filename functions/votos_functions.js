@@ -144,7 +144,7 @@ candidato5.addEventListener('click', function()
 botonInicio.addEventListener('click', function()
 {
   alert("Sera dirigido al inicio de sesión!");
-  localStorage.setItem('contCand1', contCand1);
+  localStorage.setItem('conCand1', contCand1);
   localStorage.setItem('conCand2', contCand2);
   localStorage.setItem('conCand3', contCand3);
   localStorage.setItem('conCand4', contCand4);

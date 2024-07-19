@@ -6,14 +6,14 @@ const imagen=document.getElementById('imagenCandGanador');
 const ganadorNombre=document.getElementById('nombreGanador');
 //variables
 let auto=true;
-let candidato1=localStorage.getItem("contCand1");
-let candidato2=localStorage.getItem("contCand2");
-let candidato3=localStorage.getItem("contCand3");
-let candidato4=localStorage.getItem("contCand4");
-let candidato5=localStorage.getItem("contCand5");
-let votosTotales=localStorage.getItem("contVotos");
+let candidato1=localStorage.getItem("conCand1");
+let candidato2=localStorage.getItem("conCand2");
+let candidato3=localStorage.getItem("conCand3");
+let candidato4=localStorage.getItem("conCand4");
+let candidato5=localStorage.getItem("conCand5");
+let votosTotales=localStorage.getItem("conVotos");
 //CARGA DE DATOS
-//decreto de ganadores
+//Decreto del ganador---------------------------------------------------------------------------------
 if ((candidato1>candidato2)&&(candidato1>candidato3)&&(candidato1>candidato4)&&(candidato1>candidato5))
 {
     imagen.src="img/edMundo.png";
@@ -29,37 +29,32 @@ else
     else
     {
         if ((candidato3>candidato1)&&(candidato3>candidato2)&&(candidato3>candidato4)&&(candidato3>candidato5))
+        {
+            imagen.src="img/maria corina.png";
+            ganadorNombre.textContent="Maria Corina";
+        }
+        else
+        {
+            if ((candidato4>candidato1)&&(candidato4>candidato2)&&(candidato4>candidato3)&&(candidato4>candidato5))
             {
-                imagen.src="img/maria corina.png";
-                ganadorNombre.textContent="Maria Corina";
+                imagen.src="img/Javier Milei.png";
+                ganadorNombre.textContent="Javier Milei";
             }
             else
             {
-                if ((candidato4>candidato1)&&(candidato4>candidato2)&&(candidato4>candidato3)&&(candidato4>candidato5))
-                    {
-                        imagen.src="img/Javier Milei.png";
-                        ganadorNombre.textContent="Javier Milei";
-                    }
-                    else
-                    {
-                        if ((candidato5>candidato1)&&(candidato5>candidato2)&&(candidato5>candidato3)&&(candidato5>candidato4))
-                            {
-                                imagen.src="img/kevon gonzalez.png";
-                                ganadorNombre.textContent="Kevin Gonzalez";
-                            }
-                            else
-                            {
-                                
-                            }
-                    }
+                if ((candidato5>candidato1)&&(candidato5>candidato2)&&(candidato5>candidato3)&&(candidato5>candidato4))
+                {
+                    imagen.src="img/kevon gonzalez.png";
+                    ganadorNombre.textContent="Kevin Gonzalez";
+                }
+                else
+                {
+                    ganadorNombre.textContent="NULL"
+                }
             }
+        }
     }
 }
-
-
-
-
-
 //Boton regresar
 botonRegresar.addEventListener('click', function()
 {
