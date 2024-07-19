@@ -13,6 +13,7 @@ let contCand2=0;
 let contCand3=0;
 let contCand4=0;
 let contCand5=0;
+let contVotosTotales=0;
 //Sweet Alerts----------------------------------
 //cand1
 candidato1.addEventListener('click', function()
@@ -34,7 +35,8 @@ candidato1.addEventListener('click', function()
           });
         }
         if(result.isConfirmed){
-          contCand1+=1
+          contCand1+=1;
+          contVotosTotales+=1;
         }
       });
 })
@@ -58,7 +60,8 @@ candidato2.addEventListener('click', function()
           });
         }
         if(result.isConfirmed){
-          contCand2+=1
+          contCand2+=1;
+          contVotosTotales+=1;
         }
       });
 })
@@ -82,7 +85,8 @@ candidato3.addEventListener('click', function()
           });
         }
         if(result.isConfirmed){
-          contCand3+=1
+          contCand3+=1;
+          contVotosTotales+=1;
         }
       });
 })
@@ -106,7 +110,8 @@ candidato4.addEventListener('click', function()
           });
         }
         if(result.isConfirmed){
-          contCand4+=1
+          contCand4+=1;
+          contVotosTotales+=1;
         }
       });
 })
@@ -131,6 +136,7 @@ candidato5.addEventListener('click', function()
         }
         if(result.isConfirmed){
           contCand5+=1
+          contVotosTotales+=1;
         }
       });
 })
@@ -138,5 +144,42 @@ candidato5.addEventListener('click', function()
 botonInicio.addEventListener('click', function()
 {
   alert("Sera dirigido al inicio de sesión!");
+  localStorage.setItem('contCand1', contCand1);
+  localStorage.setItem('conCand2', contCand2);
+  localStorage.setItem('conCand3', contCand3);
+  localStorage.setItem('conCand4', contCand4);
+  localStorage.setItem('conCand5', contCand5);
+  localStorage.setItem('conVotos', contVotosTotales);
   window.location.href="index.html"
 })
+//ADMIN CODE----------------------------------------------------------------------------------------------------------------
+//botones
+const botonRegresar=document.getElementById('botonRegresar2');
+const mostrarDatos=document.getElementById('mostrarDat');
+const info=document.querySelector('.informacion');
+//variables
+let auto=true;
+//Boton regresar
+botonRegresar.addEventListener('click', function()
+{
+    alert("Sera redirigido a la pagina de inicio!");
+    window.location.href="index.html";
+})
+//Boton mostrar
+mostrarDatos.addEventListener('click', function()
+{
+    if(auto==false)
+    {
+        info.style.display= "inherit";
+        auto=true;
+    }
+    else
+    {
+        if(auto==true)
+        {
+            info.style.display= "none";
+            auto=false;
+        }
+    }
+})
+
