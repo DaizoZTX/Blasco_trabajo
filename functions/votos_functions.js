@@ -143,7 +143,6 @@ candidato5.addEventListener('click', function()
 //Click en el boton de volver al inicio
 botonInicio.addEventListener('click', function()
 {
-  alert("Sera dirigido al inicio de sesión!");
   localStorage.setItem('conCand1', contCand1);
   localStorage.setItem('conCand2', contCand2);
   localStorage.setItem('conCand3', contCand3);
@@ -152,34 +151,5 @@ botonInicio.addEventListener('click', function()
   localStorage.setItem('conVotos', contVotosTotales);
   window.location.href="index.html"
 })
-//ADMIN CODE----------------------------------------------------------------------------------------------------------------
-//botones
-const botonRegresar=document.getElementById('botonRegresar2');
-const mostrarDatos=document.getElementById('mostrarDat');
-const info=document.querySelector('.informacion');
-//variables
-let auto=true;
-//Boton regresar
-botonRegresar.addEventListener('click', function()
-{
-    alert("Sera redirigido a la pagina de inicio!");
-    window.location.href="index.html";
-})
-//Boton mostrar
-mostrarDatos.addEventListener('click', function()
-{
-    if(auto==false)
-    {
-        info.style.display= "inherit";
-        auto=true;
-    }
-    else
-    {
-        if(auto==true)
-        {
-            info.style.display= "none";
-            auto=false;
-        }
-    }
-})
+
 
