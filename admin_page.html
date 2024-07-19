@@ -64,51 +64,6 @@
     </div>
     
     <script src="paquetes/node_modules/chart.js/dist/chart.umd.js"></script>
-    <script>
-    const chart = document.querySelector(".chart");
-    const grafica = document.querySelector(".chartGrafica")
-
-        new Chart(chart, {
-          type: 'bar',
-          data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-
-        });
-
-        new Chart(grafica, {
-          type: 'bar',
-          data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-
-        });
-        
-    </script>
     <script src="functions/admin_function.js"></script>
 </body>
     
