@@ -37,6 +37,7 @@
 .informacion{
     background-color: none;
     height: 60%;
+    display: auto;
 }
 
 .tarjetas{
@@ -80,6 +81,14 @@
     margin: -10%;
 }
 
+.botones{
+    margin-left: 1%;
+}
+
+h2{
+    color: #333333;
+}
+
 hr{
     border-top-color: #00e1ff;
     border-bottom-color: #00e1ff;
@@ -98,6 +107,7 @@ button{
     border-color: transparent;
     background-color: aliceblue;
     margin-bottom: 1%;
+    color: #333333;
 }
 
 button:hover{

@@ -82,6 +82,7 @@ h3{
 button{
     border-style: solid;
     border-radius: 2vw;
+    color: #333333;
 }
 
 button:hover{
