@@ -37,7 +37,7 @@
 .informacion{
     background-color: none;
     height: 60%;
-    display: auto;
+    display: none;
 }
 
 .tarjetas{
