@@ -65,7 +65,7 @@ else
     }
 }
 //Porcentaje de ganadores
-porcentajeGanador.textContent="% DE VOTOS DEL GANADOR: "+ ((votosGanador/votosTotales)*100).toFixed(2)+"%"
+porcentajeGanador.textContent="VOTOS DEL GANADOR: "+ ((votosGanador/votosTotales)*100).toFixed(2)+"%"
 //votos totales
 votosTotalesTxt.textContent="Votos totales: "+votosTotales;
 //Boton regresar
@@ -81,7 +81,8 @@ mostrarDatos.addEventListener('click', function()
     {
         info.style.display= "inherit";
         auto=true;
-        charts(votosTotales,candidato1,candidato2,candidato3,candidato4,candidato5)
+        charts(candidato1,candidato2,candidato3,candidato4,candidato5);
+        charts2(votosTotales,candidato1,candidato2,candidato3,candidato4,candidato5);
     }
     else
     {
@@ -93,21 +94,22 @@ mostrarDatos.addEventListener('click', function()
     }
 })
 
-function charts(total, cont1,cont2,cont3,cont4,cont5){
+function charts(cont1,cont2,cont3,cont4,cont5){
+
     const chart = document.querySelector(".chart");
-    const grafica = document.querySelector(".chartGrafica")
+
     
         new Chart(chart, {
           type: 'bar',
           data: {
             labels: ['EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
             datasets: [{
-              label: '# of Votes',
+              label: '# de votos ',
               data: [cont1, cont2, cont3, cont4, cont5],
               borderWidth: 1
             }]
           },
-          options: {
+          options: { responsive: true,
             scales: {
               y: {
                 beginAtZero: true
@@ -115,27 +117,30 @@ function charts(total, cont1,cont2,cont3,cont4,cont5){
             }
           }
     
-        });
-    
-        new Chart(grafica, {
-          type: 'bar',
-          data: {
-            labels: ["Votos totales",'EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
-            datasets: [{
-              label: '% of Votes',
-              data: [100, cont1/total*100, cont2/total*100, cont3/total*100, cont4/total*100, cont5/total*100],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: { 
-                beginAtZero: true
-              }
-            }
-          }
-    
-        });
-        
+        });    
     }
 
+function charts2(total, cont1,cont2,cont3,cont4,cont5){
+
+  const grafica = document.querySelector(".chartGrafica")
+
+  new Chart(grafica, {
+    type: 'doughnut',
+    data: {
+      labels: ['EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
+      datasets: [{
+        label: '% de Votos',
+        data: [cont1/total*100,cont2/total*100, cont3/total*100, cont4/total*100, cont5/total*100],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    }
+  });
+}
