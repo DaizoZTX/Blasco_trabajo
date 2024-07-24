@@ -43,7 +43,7 @@
 .tarjetas{
     background-color: none;
     display: flex;
-    height: 90%;
+    height: 95%;
     justify-content: space-around;
 }
 
@@ -69,11 +69,38 @@
 .repartido{
     background-color: none;
     width: 30%;
+    display: grid;
+    justify-items: center;
 }
 
 .grafica{
     background-color: none;
     width: 30%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+}
+
+.repartido div{
+
+    height: 30vh;
+    width: 29vw;
+}
+
+.grafica div{
+    margin-top: -5%;
+    width: auto;
+    height: auto;
+}
+
+.repartido div:hover{
+    border-color: transparent;
+    color: transparent;
+}
+
+.grafica div:hover{
+    border-color: transparent;
+    color: transparent;
 }
 
 .ganador i{
@@ -87,6 +114,7 @@
 
 h2{
     color: #333333;
+    margin-top: 2%;
 }
 
 hr{

@@ -57,15 +57,13 @@ else
                 }
                 else
                 {
-                    ganadorNombre.textContent="NULL";
+                    ganadorNombre.textContent="NULO";
                     votosGanador=0;
                 }
             }
         }
     }
 }
-//Porcentaje de ganadores
-porcentajeGanador.textContent="% DE VOTOS DEL GANADOR: "+ (votosGanador/votosTotales)*100+"%"
 //votos totales
 votosTotalesTxt.textContent="Votos totales: "+votosTotales;
 //Boton regresar
@@ -81,6 +79,8 @@ mostrarDatos.addEventListener('click', function()
     {
         info.style.display= "inherit";
         auto=true;
+        charts(candidato1,candidato2,candidato3,candidato4,candidato5);
+        charts2(votosTotales,candidato1,candidato2,candidato3,candidato4,candidato5);
     }
     else
     {
@@ -91,3 +91,54 @@ mostrarDatos.addEventListener('click', function()
         }
     }
 })
+
+function charts(cont1,cont2,cont3,cont4,cont5){
+
+    const chart = document.querySelector(".chart");
+
+    
+        new Chart(chart, {
+          type: 'bar',
+          data: {
+            labels: ['EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
+            datasets: [{
+              label: '# de votos ',
+              data: [cont1, cont2, cont3, cont4, cont5],
+              borderWidth: 1
+            }]
+          },
+          options: { responsive: true,
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+    
+        });    
+    }
+
+function charts2(total, cont1,cont2,cont3,cont4,cont5){
+
+  const grafica = document.querySelector(".chartGrafica")
+
+  new Chart(grafica, {
+    type: 'doughnut',
+    data: {
+      labels: ['EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
+      datasets: [{
+        label: '% de Votos',
+        data: [cont1/total*100,cont2/total*100, cont3/total*100, cont4/total*100, cont5/total*100],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+      }
+    }
+  });
+}

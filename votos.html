@@ -19,35 +19,43 @@
             <h1>Sistema Electoral Nacional 2024</h1>
         </div>
         <hr>
-        <div class="subTitulo">
-            <h2>¿Cuál Candidato desea elegir?</h2>
+        <!-- Introduccion de cedula y su respectiva validacion -->
+        <div class="IntroduccionDeCedula" id="validacionDeIdentidad">
+            <input type="number" id="inputCedulaUsuario">
+            <button id="botonIngresar">INGRESAR!</button>
         </div>
+        <div id="contenedorCandidatos">
+            <!-- Sistema de votacion como tal -->
+            <div class="subTitulo">
+                <h2>¿Cuál Candidato desea elegir?</h2>
+            </div>
 
-        <div class="votantes">
-            <button class="tarjeta" id="cand1">  
-                <img src="img/edMundo.png" alt="">
-                <h3>Edmundo</h3>
-            </button>
+            <div class="votantes">
+                <button class="tarjeta" id="cand1">  
+                    <img src="img/edMundo.png" alt="">
+                    <h3>Edmundo</h3>
+                </button>
 
-            <button class="tarjeta" id="cand2">  
-                <img src="img/maduro.png" alt="">
-                <h3>Nicolas Maduro</h3>
-            </button>
+                <button class="tarjeta" id="cand2">  
+                    <img src="img/maduro.png" alt="">
+                    <h3>Nicolas Maduro</h3>
+                </button>
 
-            <button class="tarjeta" id="cand3">  
-                <img src="img/maria corina.png" alt="">
-                <h3>Maria Corina</h3>
-            </button>
+                <button class="tarjeta" id="cand3">  
+                    <img src="img/maria corina.png" alt="">
+                    <h3>Maria Corina</h3>
+                </button>
 
-            <button class="tarjeta" id="cand4">  
-                <img src="img/Javier Milei.png" alt="">
-                <h3>Javier Milei</h3>
-            </button>
+                <button class="tarjeta" id="cand4">  
+                    <img src="img/Javier Milei.png" alt="">
+                    <h3>Javier Milei</h3>
+                </button>
 
-            <button class="tarjeta" id="cand5">  
-                <img src="img/kevon gonzalez.png" alt="" width="23vw">
-                <h3>Kevin Gonzalez</h3>
-            </button>
+                <button class="tarjeta" id="cand5">  
+                    <img src="img/kevon gonzalez.png" alt="" width="23vw">
+                    <h3>Kevin Gonzalez</h3>
+                </button>
+            </div>
         </div>
         <hr>
         <div class="botones">
