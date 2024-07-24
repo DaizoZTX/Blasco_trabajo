@@ -1,12 +1,11 @@
-//Declaracion
+//Declaracion----------------------------------
 const botonLogin = document.querySelector('.botones1');
 const botonOlvide = document.querySelector('.botones2');
 const nickInput = document.getElementById('txtUsuario');
 const passwordInput = document.getElementById('passwordUsuario');
-//passwords autoasignados
+//passwords autoasignados----------------------
 let userPassword=1234;
-
-//Eventos
+//Eventos--------------------------------------
 //Inicio de sesion
 botonLogin.addEventListener('click', function ()
 {

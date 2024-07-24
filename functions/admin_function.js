@@ -19,59 +19,72 @@ let votosGanador=0;
 //Decreto del ganador---------------------------------------------------------------------------------
 if ((candidato1>candidato2)&&(candidato1>candidato3)&&(candidato1>candidato4)&&(candidato1>candidato5))
 {
-    imagen.src="img/edMundo.png";
-    ganadorNombre.textContent="Edmundo Gonzalez";
-    votosGanador=candidato1;
+  imagen.src="img/edMundo.png";
+  ganadorNombre.textContent="Edmundo Gonzalez";
+  votosGanador=candidato1;
 }
 else
 {
-    if ((candidato2>candidato1)&&(candidato2>candidato3)&&(candidato2>candidato4)&&(candidato2>candidato5))
+  if ((candidato2>candidato1)&&(candidato2>candidato3)&&(candidato2>candidato4)&&(candidato2>candidato5))
+  {
+    imagen.src="img/maduro.png";
+    ganadorNombre.textContent="Nicolás Maduro";
+    votosGanador=candidato2;
+  }
+  else
+  {
+    if ((candidato3>candidato1)&&(candidato3>candidato2)&&(candidato3>candidato4)&&(candidato3>candidato5))
     {
-        imagen.src="img/maduro.png";
-        ganadorNombre.textContent="Nicolás Maduro";
-        votosGanador=candidato2;
+      imagen.src="img/maria corina.png";
+      ganadorNombre.textContent="Maria Corina";
+      votosGanador=candidato3;
     }
     else
     {
-        if ((candidato3>candidato1)&&(candidato3>candidato2)&&(candidato3>candidato4)&&(candidato3>candidato5))
+      if ((candidato4>candidato1)&&(candidato4>candidato2)&&(candidato4>candidato3)&&(candidato4>candidato5))
+      {
+        imagen.src="img/Javier Milei.png";
+        ganadorNombre.textContent="Javier Milei";
+        votosGanador=candidato4;
+      }
+      else
+      {
+        if ((candidato5>candidato1)&&(candidato5>candidato2)&&(candidato5>candidato3)&&(candidato5>candidato4))
         {
-            imagen.src="img/maria corina.png";
-            ganadorNombre.textContent="Maria Corina";
-            votosGanador=candidato3;
+          imagen.src="img/kevon gonzalez.png";
+          ganadorNombre.textContent="Kevin Gonzalez";
+          votosGanador=candidato5;
         }
         else
         {
-            if ((candidato4>candidato1)&&(candidato4>candidato2)&&(candidato4>candidato3)&&(candidato4>candidato5))
+          if  (candidato1==0 && candidato2==0 && candidato3==0 && candidato4==0 && candidato5==0)
+          {
+            ganadorNombre.textContent="NO EXISTEN VOTOS!!";
+            votosGanador=0;
+          }
+          else
+          {
+            //Nota:Creo que como maximo tendremos que dejar 3 candidatos
+            if (((candidato1==candidato2)||(candidato1==candidato3))||((candidato2==candidato1)||(candidato2==candidato3))||((candidato3==candidato1)||(candidato3==candidato2)))
             {
-                imagen.src="img/Javier Milei.png";
-                ganadorNombre.textContent="Javier Milei";
-                votosGanador=candidato4;
+              ganadorNombre.textContent="EMPATE!";
+              votosGanador=0;
             }
-            else
-            {
-                if ((candidato5>candidato1)&&(candidato5>candidato2)&&(candidato5>candidato3)&&(candidato5>candidato4))
-                {
-                    imagen.src="img/kevon gonzalez.png";
-                    ganadorNombre.textContent="Kevin Gonzalez";
-                    votosGanador=candidato5;
-                }
-                else
-                {
-                    ganadorNombre.textContent="NULO";
-                    votosGanador=0;
-                }
-            }
+          }
         }
+      }
     }
+  }
 }
 //votos totales
 votosTotalesTxt.textContent="Votos totales: "+votosTotales;
 //Boton regresar
 botonRegresar.addEventListener('click', function()
 {
-    alert("Sera redirigido a la pagina de inicio!");
-    window.location.href="index.html";
+   //Falta un sweet alert! 
+  window.location.href="index.html";
 })
+
 //Boton mostrar
 mostrarDatos.addEventListener('click', function()
 {
@@ -92,8 +105,10 @@ mostrarDatos.addEventListener('click', function()
     }
 })
 
-function charts(cont1,cont2,cont3,cont4,cont5){
-
+//Grafico de barras
+function charts(cont1,cont2,cont3,cont4,cont5)
+{
+    //Obtencion de la instancia
     const chart = document.querySelector(".chart");
 
     
@@ -116,10 +131,12 @@ function charts(cont1,cont2,cont3,cont4,cont5){
           }
     
         });    
-    }
+}
 
-function charts2(total, cont1,cont2,cont3,cont4,cont5){
-
+//Grafico de dona
+function charts2(total, cont1,cont2,cont3,cont4,cont5)
+{
+      //Obtencion de la instancia
   const grafica = document.querySelector(".chartGrafica")
 
   new Chart(grafica, {

@@ -23,12 +23,16 @@ let contVotosTotales=0;
 let votanteA=0;
 //Arrays/Vectores--------------------------------------------
 let votantes=[];
-//Validacion de identidades------------------------------
+//Visibilidad del contenedor de votaciones------------------
 contenedorCandidatos.style.display="none";
-//Evento de click al boton ingresar
+//Validacion de identidades----------------------------------
 botonIngresar.addEventListener('click', function()
 {
   votanteA=cedulaInput.value;
+  if (votanteA==0)
+  {
+    swal.fire("Cedula inexistente!!");
+  }
   /* Se utiliza el metodo ".some" para declarar una variable dentro de si y
   compararla con el input; es de destacar que esta variable se define como 
   un recorrido por todos los valores del array */
@@ -38,13 +42,17 @@ botonIngresar.addEventListener('click', function()
   }
   else
   {
-    votantes.push(votanteA);
-    localStorage.setItem("cedulasVotantes",votantes);
+    if (votanteA!=0)
+    {  
+      contenedorCandidatos.style.display="inherit";
+      validacionDeIdentidad.style.display="none";
+      votantes.push(votanteA);
+      localStorage.setItem("cedulasVotantes",votantes);
+    }
   }
 })
-
-//Sweet Alerts-------------------------------------------
-//cand1
+//Sweet Alerts----------------------------------------------
+//Candidato n°1
 candidato1.addEventListener('click', function()
 {
     Swal.fire({
@@ -71,7 +79,7 @@ candidato1.addEventListener('click', function()
         }
       });
 })
-//cand2
+//Candidato n°2
 candidato2.addEventListener('click', function()
 {
     Swal.fire({
@@ -98,7 +106,7 @@ candidato2.addEventListener('click', function()
         }
       });
 })
-//cand3
+//Candidato n°3
 candidato3.addEventListener('click', function()
 {
     Swal.fire({
@@ -125,7 +133,7 @@ candidato3.addEventListener('click', function()
         }
       });
 })
-//cand4
+//Candidato n°4
 candidato4.addEventListener('click', function()
 {
     Swal.fire({
@@ -152,7 +160,7 @@ candidato4.addEventListener('click', function()
         }
       });
 })
-//cand5
+//Candidato n°5
 candidato5.addEventListener('click', function()
 {
     Swal.fire({
@@ -182,11 +190,12 @@ candidato5.addEventListener('click', function()
 //Click en el boton de volver al inicio
 botonInicio.addEventListener('click', function()
 {
+  //Almacenamiento de los votos en el protocolo https
   localStorage.setItem('conCand1', contCand1);
   localStorage.setItem('conCand2', contCand2);
   localStorage.setItem('conCand3', contCand3);
   localStorage.setItem('conCand4', contCand4);
-  localStorage.setItem('conCand5', contCand5);
+  localStorage.setItem('conCand5', contCand5); 
   localStorage.setItem('conVotos', contVotosTotales);
   window.location.href="index.html"
 })

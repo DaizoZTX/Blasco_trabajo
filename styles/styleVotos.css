@@ -110,6 +110,23 @@ hr{
     background-color: aliceblue;
 }
 
+/* Contenedor y elementos del ingreso de cedula */
+.inputCedula{
+    background-color: aliceblue;
+    margin: 4%;
+    font-size: 1.3vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+}
+
+.botonIngresar{
+    font-size: 1.5vw;
+    border-style: solid;
+    border-radius: 1vw;
+    background-color: aliceblue;
+    text-shadow: aliceblue 2px;
+}
+
 @font-face {
     font-family: 'Lovelo';
     src: url('fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),
