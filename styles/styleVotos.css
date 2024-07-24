@@ -125,6 +125,20 @@ hr{
     border-radius: 1vw;
     background-color: aliceblue;
     text-shadow: aliceblue 2px;
+    display: flex;
+    margin-left: 12vw;;
+}
+
+.introduccionDeCedula{
+    margin-left: 35vw;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.labelCedula
+{
+    color: white;
+    margin-left: 14%;
 }
 
 @font-face {
