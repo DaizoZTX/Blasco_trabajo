@@ -29,40 +29,36 @@
         </center>
         
         <div class="informacion">
-            <div class="tarjetas">
+
                 <div class="ganador">
                     <center>
                         <h2>Ganador de la Votación</h2>
-                        <img src="img/cand.png" alt="" id="imagenCandGanador" height="200px">
+                        <img src="img/cand.png" alt="" id="imagenCandGanador">
                         <h2 id="nombreGanador"> Nombre del Ganador de la votación </h2>
                     </center>
                 </div>
 
                 <div class="repartido">
-                    
+                    <center>
                     <h2>Repartición de Votos</h2>
                     <div>
                         <canvas class="chart"></canvas>
                     </div>
                     <h2 id="votosTotalesTxt"> Votos totales: </h2>
-                    
+                    </center>
                 </div>
 
                 <div class="grafica">
-                    
+                    <center>
                     <h2>Repartición porcentual</h2>
                     <div>
-                        <canvas class="chartGrafica"></canvas>
-                    </div>   
+                    <canvas class="chartGrafica"></canvas>
+                    </div>
+                    </center>
                 </div>
-            </div>
 
+                <button id="botonRegresar2"> <i class='bx bx-arrow-back'></i> Volver al inicio</button>
         </div>
-
-        <div class="botones">
-            <button id="botonRegresar2"> <i class='bx bx-arrow-back'></i> Volver al inicio</button>
-        </div>
-
     </div>
     
     <script src="paquetes/node_modules/chart.js/dist/chart.umd.js"></script>

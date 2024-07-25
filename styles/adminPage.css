@@ -5,13 +5,12 @@
 
 .general{
     width: 100%;
-    height: 100%;
+    height: 315%;
     top: 0%;
     left: 0%;
     background-color: #333333;
-    justify-content: center;
     position: absolute;
-    align-items: center;
+
 }
 
 .titulo{
@@ -36,15 +35,13 @@
 
 .informacion{
     background-color: none;
-    height: 60%;
     display: none;
-}
-
-.tarjetas{
-    background-color: none;
-    display: flex;
-    height: 95%;
-    justify-content: space-around;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1em;
+    gap: 1%;
 }
 
 .ganador{
@@ -53,44 +50,51 @@
 
 }
 
-.tarjetas div{
+.informacion div{
 
     border-style: solid;
     border-radius: 2vw;
+    width: 100%;
     background-color: aliceblue;
     border-color: transparent;
 }
 
-.tarjetas div:hover{
+.informacion  div:hover{
     border-color: #ff6961;
     color: #ff6961;
 }
 
 .repartido{
     background-color: none;
-    width: 30%;
     display: grid;
-    justify-items: center;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 1%;
 }
 
 .grafica{
     background-color: none;
-    width: 30%;
     display: grid;
-    justify-items: center;
-    justify-content: center;
+    max-width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    gap: 1%;
 }
 
 .repartido div{
 
-    height: 30vh;
-    width: 29vw;
+    background-color: none;
+    height: 75vh;
+    width: 75vw;
+    
+
 }
 
 .grafica div{
-    margin-top: -5%;
-    width: auto;
-    height: auto;
+
+    height: 75vh;
+    width: 75vw;
 }
 
 .repartido div:hover{
@@ -106,10 +110,6 @@
 .ganador i{
     font-size: 18vw;
     margin: -10%;
-}
-
-.botones{
-    margin-left: 1%;
 }
 
 h2{
@@ -142,6 +142,11 @@ button:hover{
     border-color: #ff6961;
     color: #ff6961;
 }
+
+img{
+    width: 25%;
+}
+
 @font-face {
     font-family: 'Lovelo';
     src: url('fuentes/Lovelo/Lovelo\ Black.otf') format('opentype'),

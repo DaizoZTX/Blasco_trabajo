@@ -35,24 +35,24 @@ else
   {
     if ((candidato3>candidato1)&&(candidato3>candidato2)&&(candidato3>candidato4)&&(candidato3>candidato5))
     {
-      imagen.src="img/maria corina.png";
-      ganadorNombre.textContent="Maria Corina";
+      imagen.src="img/jose brito.png";
+      ganadorNombre.textContent="Jose Brito";
       votosGanador=candidato3;
     }
     else
     {
       if ((candidato4>candidato1)&&(candidato4>candidato2)&&(candidato4>candidato3)&&(candidato4>candidato5))
       {
-        imagen.src="img/Javier Milei.png";
-        ganadorNombre.textContent="Javier Milei";
+        imagen.src="img/antonio ecarri.png";
+        ganadorNombre.textContent="Antonio Ecarri";
         votosGanador=candidato4;
       }
       else
       {
         if ((candidato5>candidato1)&&(candidato5>candidato2)&&(candidato5>candidato3)&&(candidato5>candidato4))
         {
-          imagen.src="img/kevon gonzalez.png";
-          ganadorNombre.textContent="Kevin Gonzalez";
+          imagen.src="img/javier bertucci.png";
+          ganadorNombre.textContent="Javier Bertucci";
           votosGanador=candidato5;
         }
         else
@@ -90,7 +90,7 @@ mostrarDatos.addEventListener('click', function()
 {
     if(auto==false)
     {
-        info.style.display= "inherit";
+        info.style.display= "grid";
         auto=true;
         charts(candidato1,candidato2,candidato3,candidato4,candidato5);
         charts2(votosTotales,candidato1,candidato2,candidato3,candidato4,candidato5);
@@ -115,7 +115,7 @@ function charts(cont1,cont2,cont3,cont4,cont5)
         new Chart(chart, {
           type: 'bar',
           data: {
-            labels: ['EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
+            labels: ['EdMundo Gonzalez', 'Nicolas Maduro', 'Jose Brito', 'Antonio Ecarri', 'Javier Bertucci'],
             datasets: [{
               label: '# de votos ',
               data: [cont1, cont2, cont3, cont4, cont5],
@@ -142,7 +142,7 @@ function charts2(total, cont1,cont2,cont3,cont4,cont5)
   new Chart(grafica, {
     type: 'doughnut',
     data: {
-      labels: ['EdMundo', 'Maduro', 'Maria Corina', 'Javier Milei', 'Kevin Gonzalez'],
+      labels: ['EdMundo Gonzalez', 'Nicolas Maduro', 'Jose Brito', 'Antonio Ecarri', 'Javier Bertucci'],
       datasets: [{
         label: '% de Votos',
         data: [cont1/total*100,cont2/total*100, cont3/total*100, cont4/total*100, cont5/total*100],
