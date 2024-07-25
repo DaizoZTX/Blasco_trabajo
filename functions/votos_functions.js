@@ -190,14 +190,35 @@ candidato5.addEventListener('click', function()
 //Click en el boton de volver al inicio
 botonInicio.addEventListener('click', function()
 {
-  //Almacenamiento de los votos en el protocolo https
-  localStorage.setItem('conCand1', contCand1);
-  localStorage.setItem('conCand2', contCand2);
-  localStorage.setItem('conCand3', contCand3);
-  localStorage.setItem('conCand4', contCand4);
-  localStorage.setItem('conCand5', contCand5); 
-  localStorage.setItem('conVotos', contVotosTotales);
-  window.location.href="index.html"
+  //Condicionales de salida de la web
+  Swal.fire({
+    title: "Ingrese la contraseña del administrador!",
+    input: "password",
+    inputAttributes: {
+      autocapitalize: "off"
+      
+    },
+    showCancelButton: true,
+    confirmButtonText: "Aceptar!",
+    showLoaderOnConfirm: true,
+    allowOutsideClick: () => !Swal.isLoading()
+  }).then((result) => {
+    if (result.isConfirmed && result.value!="Admin")
+    {
+      Swal.fire("Contraseña incorrecta!");
+    }
+    if (result.isConfirmed && result.value=="Admin") 
+    {
+      window.location.href="index.html"
+        //Almacenamiento de los votos en el protocolo https
+      localStorage.setItem('conCand1', contCand1);
+      localStorage.setItem('conCand2', contCand2);
+      localStorage.setItem('conCand3', contCand3);
+      localStorage.setItem('conCand4', contCand4);
+      localStorage.setItem('conCand5', contCand5); 
+      localStorage.setItem('conVotos', contVotosTotales);
+    }
+  });
 })
 
 
