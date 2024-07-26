@@ -16,6 +16,13 @@ let candidato5=localStorage.getItem("conCand5");
 let votosTotales=localStorage.getItem("conVotos");
 let votosGanador=0;
 //CARGA DE DATOS
+//ParseInts
+votosTotales=parseInt(votosTotales);
+candidato1=parseInt(candidato1);
+candidato2=parseInt(candidato2);
+candidato3=parseInt(candidato3);
+candidato4=parseInt(candidato4);
+candidato5=parseInt(candidato5);
 //Decreto del ganador---------------------------------------------------------------------------------
 if ((candidato1>candidato2)&&(candidato1>candidato3)&&(candidato1>candidato4)&&(candidato1>candidato5))
 {
