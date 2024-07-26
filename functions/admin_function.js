@@ -88,8 +88,24 @@ votosTotalesTxt.textContent="Votos totales: "+votosTotales;
 //Boton regresar
 botonRegresar.addEventListener('click', function()
 {
-   //Falta un sweet alert! 
-  window.location.href="index.html";
+  Swal.fire({
+    title: "¿Estas seguro?",
+    text: "Si sales de esta pestaña e inicias una nueva sesion como usuario las votaciones se reiniciaran.",
+    icon: "question",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Estoy seguro!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "¡Exito!",
+        text: "Usted volvera a la pagina de inicio de sesion!",
+        icon: "sucesss"
+      });
+      window.location.href="index.html";
+    }
+  });
 })
 
 //Boton mostrar
